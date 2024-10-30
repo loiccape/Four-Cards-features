@@ -64,7 +64,7 @@ main{
 
 .item{
     border-radius: 10px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: var(--color-grayish-blue) 0px 8px 24px;
     height: 222px;
     padding: 30px;
     position: relative;
@@ -127,6 +127,7 @@ main{
        height: 600px;
        width: 70%;
        display: grid;
+       gap: 20px;
        grid-template-columns: repeat(3,1fr);
        grid-template-rows: repeat(6,100px)  ;
        align-items: center;
@@ -142,12 +143,14 @@ main{
     .team {
         grid-column: 2;
         grid-row: 1 / 4;
+        align-self: end;
         
     }
     
     .karma {
         grid-column: 2;
         grid-row: 4 / 7;
+        align-self: start;
         
     }
     
